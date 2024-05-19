@@ -46,16 +46,10 @@ public class Menu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        backupBtn = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        restoreBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        backupMenuItem = new javax.swing.JMenuItem();
-        restoreMenuItem = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -92,30 +86,6 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Cipher\\Downloads\\349096681637204808-128.png")); // NOI18N
-
-        backupBtn.setBackground(new java.awt.Color(102, 102, 102));
-        backupBtn.setFont(new java.awt.Font("Segoe Print", 1, 12)); // NOI18N
-        backupBtn.setForeground(new java.awt.Color(255, 255, 255));
-        backupBtn.setText("Backup");
-        backupBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backupBtnActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Cipher\\Downloads\\17965933361690506199-128.png")); // NOI18N
-
-        restoreBtn.setBackground(new java.awt.Color(102, 102, 102));
-        restoreBtn.setFont(new java.awt.Font("Segoe Print", 1, 12)); // NOI18N
-        restoreBtn.setForeground(new java.awt.Color(255, 255, 255));
-        restoreBtn.setText("Restore");
-        restoreBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                restoreBtnActionPerformed(evt);
-            }
-        });
-
         jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("STUDENT GRADING SYSTEM");
@@ -128,52 +98,29 @@ public class Menu extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(264, 264, 264)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(backupBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(90, 90, 90))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel3))
-                        .addGap(82, 82, 82)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(restoreBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(234, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(218, 218, 218))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(501, 501, 501)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(70, 70, 70)
                 .addComponent(jLabel1)
-                .addGap(108, 108, 108)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 169, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(restoreBtn)
-                            .addComponent(backupBtn))
-                        .addGap(167, 167, 167)))
+                .addGap(118, 118, 118)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addGap(14, 14, 14))
         );
@@ -182,36 +129,6 @@ public class Menu extends javax.swing.JFrame {
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentgradingsystemproject/iconfinder_Tune_132605_1.png"))); // NOI18N
         jMenu1.setText("System");
         jMenu1.setFont(new java.awt.Font("Segoe Print", 1, 12)); // NOI18N
-
-        backupMenuItem.setFont(new java.awt.Font("Segoe Print", 0, 12)); // NOI18N
-        backupMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentgradingsystemproject/Iconoir-Team-Iconoir-Database-backup.24.png"))); // NOI18N
-        backupMenuItem.setText("Backup");
-        backupMenuItem.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                backupMenuItemMouseClicked(evt);
-            }
-        });
-        backupMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backupMenuItemActionPerformed(evt);
-            }
-        });
-        jMenu1.add(backupMenuItem);
-
-        restoreMenuItem.setFont(new java.awt.Font("Segoe Print", 0, 12)); // NOI18N
-        restoreMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentgradingsystemproject/iconfinder_Upload_132671.png"))); // NOI18N
-        restoreMenuItem.setText("Restore");
-        restoreMenuItem.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                restoreMenuItemMouseClicked(evt);
-            }
-        });
-        restoreMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                restoreMenuItemActionPerformed(evt);
-            }
-        });
-        jMenu1.add(restoreMenuItem);
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/studentgradingsystemproject/iconfinder_Exit_132751_1.png"))); // NOI18N
         jMenuItem3.setText("Exit");
@@ -362,115 +279,6 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         new AttendanceMgmt().setVisible(true);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
-
-    private void backupMenuItemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backupMenuItemMouseClicked
-        try {
-            // TODO add your handling code here:
-
-            backup_student();
-            backup_courses();
-            backup_grades();
-            backup_departments();
-            backup_attendances();
-            
-            JOptionPane.showMessageDialog(null, "BackUp of Records Successfull");
-        } catch (IOException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }//GEN-LAST:event_backupMenuItemMouseClicked
-
-    private void restoreMenuItemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_restoreMenuItemMouseClicked
-        // TODO add your handling code here:
-        
-        try {
-            // TODO add your handling code here:
-
-            retrieve_student();
-            restore_courses();
-            restore_departments();
-            restore_grades();
-            restore_attendances();
-            
-            JOptionPane.showMessageDialog(null, "All Records have been Restored Successfully");
-        } catch (IOException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_restoreMenuItemMouseClicked
-
-    private void backupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backupBtnActionPerformed
-        // TODO add your handling code here:
-        try {
-            // TODO add your handling code here:
-
-            backup_student();
-            backup_courses();
-            backup_grades();
-            backup_departments();
-            backup_attendances();
-            
-            JOptionPane.showMessageDialog(null, "BackUp of Records Successfull");
-        } catch (IOException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_backupBtnActionPerformed
-
-    private void restoreBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restoreBtnActionPerformed
-        // TODO add your handling code here:
-        try {
-            // TODO add your handling code here:
-
-            retrieve_student();
-            restore_courses();
-            restore_departments();
-            restore_grades();
-            restore_attendances();
-            
-            JOptionPane.showMessageDialog(null, "All Records have been Restored Successfully");
-        } catch (IOException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_restoreBtnActionPerformed
-
-    private void backupMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backupMenuItemActionPerformed
-        // TODO add your handling code here:
-         try {
-            // TODO add your handling code here:
-
-            backup_student();
-            backup_courses();
-            backup_grades();
-            backup_departments();
-            backup_attendances();
-            
-            JOptionPane.showMessageDialog(null, "BackUp of Records Successfull");
-        } catch (IOException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_backupMenuItemActionPerformed
-
-    private void restoreMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restoreMenuItemActionPerformed
-        // TODO add your handling code here:
-        try {
-            // TODO add your handling code here:
-
-            retrieve_student();
-            restore_courses();
-            restore_departments();
-            restore_grades();
-            restore_attendances();
-            
-            JOptionPane.showMessageDialog(null, "All Records have been Restored Successfully");
-        } catch (IOException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_restoreMenuItemActionPerformed
     
         public static void backup_student() throws IOException
     {
@@ -604,13 +412,9 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton backupBtn;
-    private javax.swing.JMenuItem backupMenuItem;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -626,7 +430,5 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton restoreBtn;
-    private javax.swing.JMenuItem restoreMenuItem;
     // End of variables declaration//GEN-END:variables
 }
